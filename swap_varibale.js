@@ -1,9 +1,12 @@
-let a =4;
-let b = 5;
-let c;
 
-c = a;
-a = b;
-b = c;
-console.log("Value for a is = "+a );
-console.log("Value for b is = "+b );
+function Swap(a,b){
+    let c;
+
+    c = a;
+    a = b;
+    b = c;
+    return {a,b};
+}
+
+// let x = Swap(a,b);
+console.log(Swap(4,5));
