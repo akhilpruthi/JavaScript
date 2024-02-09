@@ -1,0 +1,14 @@
+<script>
+    let inputLimit = parseInt(prompt("enter postive integer upto which you want the sum"));
+
+    if (inputLimit > 0){
+        let i, sum;
+        sum = 0;
+        for(i=1; i<=inputLimit; i++){
+            sum += i;
+        }
+        alert("Sum is : " +sum);
+    } else{
+        alert("Please enter positive integer only");
+    }
+</script>
