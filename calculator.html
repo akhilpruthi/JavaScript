@@ -1,0 +1,60 @@
+<script>
+function additon(num1,num2){
+    return (num1+num2) ;
+}
+
+function subtract(num1,num2){
+    return (num1-num2);
+}
+
+function multiply(num1,num2){
+    return num1 * num2;
+}
+
+function  divide(num1,num2){
+    return num1/num2;
+}
+
+
+console.log("");
+console.log("");
+console.log("");
+console.log("");
+
+const userInput = prompt("select 1 for additon \n select 2 for subtraction \n select 3 for multiplication \n select 4 for divison");
+
+
+if(userInput == 1){
+    let num1 = prompt("Enter number 1.");
+    let num2  = prompt("enter number 2.");
+    num1 = parseInt(num1);
+    num2 = parseInt(num2);
+
+    alert( additon(num1 , num2));
+
+} else if(userInput == 2) {
+    let num1 = prompt("Enter number 1.");
+    let num2  = prompt("enter number 2.");
+    num1 = parseInt(num1);
+    num2 = parseInt(num2);
+
+    alert( subtract(num1 , num2));
+
+} else if(userInput == 3) {
+    let num1 = prompt("Enter number 1.");
+    let num2  = prompt("enter number 2.");
+    num1 = parseInt(num1);
+    num2 = parseInt(num2);
+
+    alert( multiply(num1 , num2));
+} else if(userInput == 4){
+    let num1 = prompt("Enter number 1.");
+    let num2  = prompt("enter number 2.");
+    num1 = parseInt(num1);
+    num2 = parseInt(num2);
+
+    alert( divide(num1 , num2));
+}
+
+</script>
+
