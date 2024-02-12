@@ -1,0 +1,48 @@
+<script>
+
+    function startCharacter(userInput,start){
+        let result = userInput.startsWith(start);
+        alert(result);
+    }
+
+    function endCharacter(userInput,end){
+        let result = userInput.endsWith(start);
+        alert(result);
+    }
+
+    function bothCharacters(userInput,start,end){
+        let result = userInput.startsWith(start);
+        if(result == true){
+            let result_new =userInput.endsWith(end);
+            if(result_new == true){
+                alert("both strings match");
+            } else{
+                alert("Only  the first string matches");
+            }
+        }else{
+            let result = userInput.endsWith(end);
+            alert("only the second string matches");
+        }
+    }
+
+let choice = prompt("1.Enter 1 for searching only the chartcter in start of senetence \n 2. Enter 2 for searching only the character in end of sentence. \n 3. Enter 3 to search both in front and end of sentence.")
+
+if (choice == 1){
+    let startString = prompt("Enter the start character we need to search.");
+    let userInput = prompt("Enter Sentence  to search");
+    startCharacter(userInput,startString,);
+
+} else if(choice == 2){
+    let endString = prompt("Enter the last character we need to search.");
+    let userInput = prompt("Enter Sentence  to search");
+    endCharacter(userInput,endString);
+
+} else{
+    let startString = prompt("Enter the start character we need to search.");
+    let endString = prompt("Enter the last character we need to search.");
+    let userInput = prompt("Enter Sentence  to search");
+    bothCharacters(userInput,startString,endString);
+
+}
+
+</script>
