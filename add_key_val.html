@@ -1,0 +1,16 @@
+<script>
+    
+    const propertyNumber = parseInt(prompt('Enter the number of key you want to enter'));
+    const obj = {};
+
+
+    for(let i = 0; i < propertyNumber; i++ ){
+        let a = prompt("Enter the name of key to add ");
+        let b = prompt("Enter the value of the key");
+        obj[a] = b;  //adds the key-value pair in object.
+    }
+    console.log(obj);   //printing the created object with given keys and
+    alert( JSON.stringify(obj,null,4) ); 
+    // alert(obj);
+
+</script>
