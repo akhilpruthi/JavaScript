@@ -1,0 +1,27 @@
+<html>
+<head>
+    <title>Email address verifier</title>
+</head>
+<body>
+    <div>
+        <label for="email">Please enter your email: </label><br/>
+        <input type="text" name="email" id="email"/>
+        <button onclick="emailverification()">Verify</button>
+    </div>
+    <script>
+        function emailverification() {
+            // Retrieve the value of the email input field
+            let emailInput = document.getElementById("email").value;
+            
+            // Regular expression for basic email validation
+            let pattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+            if (pattern.test(emailInput)) {
+                alert("Email address is valid");
+            } else {
+                alert("Email address is invalid");
+            }
+        }
+    </script>
+</body>
+</html>

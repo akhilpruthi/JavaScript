@@ -1,0 +1,15 @@
+<script>
+    let count = prompt("Enter the time in hours you want the counter to start ");
+
+    let newCount = count*60*60 ;
+
+    let timer = setInterval(function(){
+        console.log(newCount);
+        newCount--;
+
+        if(newCount === 0){
+            clearInterval(timer);
+            alert('Time is up!');
+        }
+    },1000)
+</script>
