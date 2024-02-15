@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Check File Extension</title>
+</head>
+<body>
+    <div>
+        <label for="fileName">File Name</label>
+        <input type="text" id="fileName" /><br/><br/>
+        <button onclick="checkFileExtension()">Check File Extension</button>
+    </div>
+    <script>
+        function checkFileExtension() {
+            let file = document.getElementById('fileName').value;
+            console.log("filename", file);
+
+            let extension = file.split('.').pop();
+            console.log("extension", extension);
+
+            alert("File extension is " + extension); 
+        }
+    </script>
+</body>
+</html>
+
